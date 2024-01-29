@@ -1,0 +1,14 @@
+openssl genrsa 2048 | openssl pkcs8 -topk8 -inform PEM -out id_rsa.p8
+openssl rsa -in id_rsa.p8 -pubout -out id_rsa.pub
+And you can replace "id_rsa" in both of those commands with the name of the server or machine where you're going to install the key
+it usually save under ~
+CafeLatte&80
+
+
+openssl genrsa 2048 | openssl pkcs8 -topk8 -inform PEM -out 10.200.12.6_rsa.p8
+openssl rsa -in 10.200.12.6_rsa.p8 -pubout -out 10.200.12.6.pub
+
+have git installed in the default location:
+"c:\program files\git\usr\bin\openssl.exe" genrsa 2048 | "c:\program files\git\usr\bin\openssl.exe" pkcs8 -topk8 -inform PEM -out 10.200.10.113_key.p8
+"c:\program files\git\usr\bin\openssl.exe" rsa -in 10.200.10.113_key.p8 -pubout -out 10.200.10.113_key.pub
+CafeLatte&80
